@@ -1,2 +1,2 @@
 # Mampf
-for webprogramming
+for webprogramming voll cool
