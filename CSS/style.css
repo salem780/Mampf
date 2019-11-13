@@ -24,32 +24,50 @@ p {
     
 }
 
-div{
-    background-color: rgb(179, 120, 87);
+.grid-container{
+    background-color: rgb (247, 247, 247);
+    display: grid;
+grid-template-columns: auto;  /*wenn ich da angebe, dann erstelle ich spalten*/ 
+grid-template-rows: 20px, auto 20px;
+}
+
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 3; /* muss immer eins mehr sein */
 }
 
 
+.box {
+grid-column-start: 1;
 
-div.Login{
+grid-column-end: 3;
+
+}
+.content1{
     float: left;
-   
-    border: 1px solid black;
    
     padding:70px;
     width: 500px;
-    border: 3px solid gray;
+   
     height: 300px;
-    margin: auto;
-    background-color: rgb(179, 120, 87);
+    margin: 20px;
+    background-color:  white;
 }
-div.join{
-    float: right;
-
-    border: 1px solid black;
-    padding: right;
+.content2{
+    float: left;
+   
+    /*border: 1px solid black;*/
+    padding:70px;
     width: 500px;
-    border: 3px solid gray;
     height: 300px;
-    margin: auto;
-    background-color: rgb(179, 120, 87);
+    margin: 20px;
+    background-color: white;
+}
+
+@media screen and (max-width:700px) {
+
+    .leftMenu.box{
+
+        display: flexbox
+    }
 }
