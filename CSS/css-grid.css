@@ -1,0 +1,22 @@
+.grid-container {
+
+display: grid;
+grid-template-columns: 100px auto 100px  /*wenn ich da angebe, dann erstelle ich spalten*/ 
+grid-template-rows: 50px, auto 20px;
+
+}
+
+
+.headerBar {
+    grid-column-start: 1;
+    grid-column-end: 3; /* muss immer eins mehr sein */
+}
+.leftmenu{
+grid.row-start
+}
+
+grid.item{
+ background-color: lightblue; 
+
+
+}
