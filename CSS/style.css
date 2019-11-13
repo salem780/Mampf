@@ -110,3 +110,14 @@ grid-column-start: 1;
     
 
 }
+
+#buttonbrown{
+
+    background-color: rgb(179,120,87);
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
