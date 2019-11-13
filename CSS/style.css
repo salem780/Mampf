@@ -1,3 +1,55 @@
-body{
+
+
+
+body
+{
+    background-color:  rgb(247, 247, 247);
+
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{ color: black}
+
+h2{
+
+    color: black
+}
+
+h3{
+    color: black
+}
+
+p {
+    color: black; 
+    
+}
+
+div{
+    background-color: rgb(179, 120, 87);
+}
+
+
+
+div.Login{
+    float: left;
+   
+    border: 1px solid black;
+   
+    padding:70px;
+    width: 500px;
+    border: 3px solid gray;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(179, 120, 87);
+}
+div.join{
+    float: right;
+
+    border: 1px solid black;
+    padding: right;
+    width: 500px;
+    border: 3px solid gray;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(179, 120, 87);
 }
