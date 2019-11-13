@@ -54,7 +54,7 @@ grid-column-end: 3;
 .content1{
     float: left;
    
-    padding:70px;
+    padding:20px;
     width: 500px;
    
     height: 300px;
@@ -65,7 +65,7 @@ grid-column-end: 3;
     float: left;
    
     /*border: 1px solid black;*/
-    padding:70px;
+    padding:20px;
     width: 500px;
     height: 300px;
     margin: 20px;
