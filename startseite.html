@@ -3,68 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Mampf</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" >
 </head>
 
 <body>
-      <header>
-          <div class = "menu" >
-            <div class = "menu-pic">
-                <a href="startseite.html"><img src="Image/logo.png" style="width: 20%" ></a>
-            
-        <div class ="menu-input" >
 
-                <ul  class = "menu" style="width:100%">
-                    <li id="menu-item-1" class="menu-item">
-                        <a href="https://www.google.de">Teilnehmende Restaurants</a>
-                    </li>
+    <div class: grid-container>
+
+    <header id="header">
+
+      <!--  <div id = "navbar"> -->
+
+    
+    
+            <!--<a href="/" class="logo">
+    <img src="Image/logo_transparent.png" width="210" height="auto"></a>-->
+   <div id = "nav-bild"><img src="Image/logo.png" width="210px" height=auto> 
+   </div>
+    <div id="nav-login"><a href="login.html">Login Restaurant</a></div>
+       
+</header>  
+
+<div id = "search">
+    
+                
+        <form>
                     
-                    <li id="menu-item-3" class="menu-item">
-                        <a href="https://www.google.de">FAQ</a>
-                    </li>
-                    <li id="menu-item-4" class="menu-item">
-                        <a href="Login.html" >Login</a>
-                    </li>
-                </ul>
-     
-            </div>
-        </header>
+           <table id="tableform">
 
-            <div class = "search">
-                
-                <form>
+            <tr>
+                    <th> <label for="mi">Mittagstisch</label></th>
+                    <th><input type="date" id="formdate"/><br/></th>
+                    <th> <input id="buttonbrown" type="submit" value="Suchen"></th>
+                  </tr>
+                  <tr>
+                    <td> <label for="pu">Preis unter</label>
+                        <input type="number" id="formnumber" step="0.01" placeholder="in €"/><br/></td>
+                    <td><label for="ve">vegetarisch</label>
+                        <input type="checkbox" id="formcheckbox"name="veg"/><br/></td>
+                    <td></td>
+                   </tr>
+                  
+                </table>
+        </form>
+    </div>
 
-                    Mittagstisch:<input type="date" disabled/><br/>
-                    Preis unter:<input type="number" step="0.01" placeholder="in €"/><br/>
-                    vegetarisch<input type="radio" name="gender"/><br/>
-                
-                    <input id=  "buttonbrown" type="submit" value="Suchen">
-                </form>
-            </div>
+
+ <!--   <div class = "box">
+            <div class ="content1" >
+           
+                    <h3>Lokal und übersichtlich</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             
-        </div class =inhalt>   
+            
+            <div class ="content2" >
+            
+           
+                    <h3>Tagesaktuell und frisch</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing 
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
+                        est Lorem ipsum dolor sit amet. </p>
+                    
+            
+            
+            </div>
+    </div>-->
 
-        <div class =innhalt1>
-
-        <h3>Lokal und übersichtlich</h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-        </div>
-        <div class="inhalt2">
-        <h3>Tagesaktuell und frisch</h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing 
-            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus 
-            est Lorem ipsum dolor sit amet. </p>
-        
-        </div>
-    </div>
-          
-    </div>
-
-    <footer class = "footer" style=" float:right ">
+    <footer id = "footer">
     
             Copyright (C) MAMPF 2019
          
@@ -72,5 +80,10 @@
         
          </footer>
 
+    </div>
+
     
 </body>
+    
+    
+
