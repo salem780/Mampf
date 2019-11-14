@@ -1,121 +1,120 @@
-<DOCTYPE! html/>
+<DOCTYPE! html />
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="Mampf_Partner_CSS.css"/>
-    </head>
 
-    <body>
-        <header>
-            <div class = "menu" >
-                <div class = "menu-pic">
-                    <img src="Image/logo.png" style="width: 20%">              
-                    <div class ="menu-input" >
-              
-                        <ul  class = "menu" style="width:100%">
-                            <li id="menu-item-1" class="menu-item">
-                                <a href="https://www.google.de">Teilnehmende Restaurants</a>
-                            </li>
-                              
-                            <li id="menu-item-3" class="menu-item">
-                                <a href="https://www.google.de">FAQ</a>
-                            </li>
+<head>
+    <meta charset="UTF-8">
+    <title>Mampf</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+</head>
 
-                            <li id="menu-item-4" class="menu-item">
-                                <a href="https://www.faz.com" >Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<header id="header">
+    <!--  <div id = "navbar"> -->
+    <!--<a href="/" class="logo">
+             <img src="Image/logo_transparent.png" width="210" height="auto"></a>-->
+    <div id="nav-bild"><img src="Image/logo.png" width="210px" height=auto> </div>
+    <div id="nav-login"><a href="">Logout Restaurant</a></div>
+</header>
+<div class=grid-container>
 
-            <h1>Herzlich Willkommen XY</h1>
-            <h2>Mittagstisch</h2>
-            <article>
+</div>
+
+<body>
+    <div class="box">
+
+        <h1>Herzlich Willkommen Partner</h1>
+        <h2>Neuen Mittagstisch anlegen</h2>
+        <div class="grid-item content">
+            <div class="menü">
+                <article>
                     <form>
-                        <input type="week"/>
+                        <input id="Datum" type="date" />
+                    </form>
+                    <form>
+                        <input id="Week" type="week" />
+                    </form>
+                    <form>
+                        <button id="MenüAnlegen" onclick="alert('Sie haben neue Mittagsmenüs angelegt.')">Menü anlegen</button>
                     </form>
                 </article>
-            <article>
-                <form>
-                    <input type="date"/>
-                </form>
-            </article>
-        </header>
+            </div>
+            <section>
+                <div class="Tabelle">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Mo</th>
+                            <th>Di</th>
+                            <th>Mi</th>
+                            <th>Do</th>
+                            <th>Fr</th>
+                            <th>Name des Gerichts</th>
+                            <th>Vegetarisch</th>
+                            <th>Preis</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="MoCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="DiCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="MiCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="DoCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="FrCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="GerichtNameBox" type="text" placeholder="Name des Gerichts" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="VegCheck" type="checkbox" />
+                                    </form>
+                                </article>
+                            </td>
+                            <td>
+                                <article>
+                                    <form>
+                                        <input id="PreisBox" type="number">
+                                    </form>
+                                </article>
+                            </td>
+                        </tr>
+                    </table>
+            </section>
+            </div>
+        </div>
 
-        <section>
-            <table style="width:100%">
-                <tr>
-                    <th>Mo</th>
-                    <th>Di</th>
-                    <th>Mi</th>
-                    <th>Do</th>
-                    <th>Fr</th>
-                    <th>Name des Gerichts</th>
-                    <th>Vegetarisch</th>
-                    <th>Preis</th>
-                </tr>
-                <tr>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article> 
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="text" placeholder="Name des Gerichts"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="checkbox"/>
-                            </form>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <form>
-                                <input type="number">
-                            </form>
-                        </article>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        
-        <footer>Copyright (C) Mampf 2019</footer>
-    </body>
+        <footer id="footer">Copyright (C) MAMPF 2019</footer>
+    </div>
+</body>
+
 </html>
