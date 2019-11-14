@@ -6,5 +6,8 @@ function Login() {
     account.password = document.getElementById('password').value;
 }
 
-var presstologin = Login.getElementByID('buttongrey');
+var presstologin = document.getElementById('buttongrey');
+presstologin.addEventListener ("click", function(){
+console.log('event1')
+})
 
