@@ -175,6 +175,18 @@ a:active {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+[type="text"] {
+    border: none;
+    color: white;
+    padding: 7px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .grid-container {
     background-color: rgb (247, 247, 247);
     display: grid;
