@@ -12,108 +12,119 @@
     <!--<a href="/" class="logo">
              <img src="Image/logo_transparent.png" width="210" height="auto"></a>-->
     <div id="nav-bild"><img src="Image/logo.png" width="210px" height=auto> </div>
-    <div id="nav-login"><a href="">Logout Restaurant</a></div>
+    <div id="nav-login"><a href="startseite.html">Logout Restaurant</a></div>
 </header>
-<div class=grid-container>
-
-</div>
 
 <body>
-    <div class="box">
+    <div class="boxPartner">
+        <div class="Begrüßung">
+            <h1>Herzlich Willkommen Partner</h1>
+        </div>
+        <div class="Mittagstischanlegen">
+            <h2>Neuen Mittagstisch anlegen</h2>
 
-        <h1>Herzlich Willkommen Partner</h1>
-        <h2>Neuen Mittagstisch anlegen</h2>
-        <div class="grid-item content">
-            <div class="menü">
+            <div>
                 <article>
-                    <form>
-                        <input id="Datum" type="date" />
-                    </form>
-                    <form>
-                        <input id="Week" type="week" />
-                    </form>
-                    <form>
-                        <button id="MenüAnlegen" onclick="alert('Sie haben neue Mittagsmenüs angelegt.')">Menü anlegen</button>
-                    </form>
+                    <div class="menue">
+                        <form>
+                            <input id="DatumWeek" type="date" />
+                        </form>
+                        <form>
+                            <input id="Week" type="week" />
+                        </form>
+                        <form>
+                            <button id="buttonMenüAnlegen" onclick="alert('Sie haben neue Mittagsmenüs angelegt.')">Menü anlegen</button>
+                        </form>
+                    </div>
                 </article>
+
             </div>
-            <section>
-                <div class="Tabelle">
-                    <table style="width:100%">
-                        <tr>
-                            <th>Mo</th>
-                            <th>Di</th>
-                            <th>Mi</th>
-                            <th>Do</th>
-                            <th>Fr</th>
-                            <th>Name des Gerichts</th>
-                            <th>Vegetarisch</th>
-                            <th>Preis</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="MoCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="DiCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="MiCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="DoCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="FrCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="GerichtNameBox" type="text" placeholder="Name des Gerichts" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="VegCheck" type="checkbox" />
-                                    </form>
-                                </article>
-                            </td>
-                            <td>
-                                <article>
-                                    <form>
-                                        <input id="PreisBox" type="number">
-                                    </form>
-                                </article>
-                            </td>
-                        </tr>
-                    </table>
-            </section>
-            </div>
+
         </div>
 
-        <footer id="footer">Copyright (C) MAMPF 2019</footer>
+    </div>
+
+
+
+
+    <div class="Tabelle">
+        <section>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Mo</th>
+                    <th>Di</th>
+                    <th>Mi</th>
+                    <th>Do</th>
+                    <th>Fr</th>
+                    <th>Name des Gerichts</th>
+                    <th>Vegetarisch</th>
+                    <th>Preis</th>
+                </tr>
+                <tr>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="MoCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="DiCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="MiCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="DoCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="FrCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="GerichtNameBox" type="text" placeholder="Name des Gerichts" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="VegCheck" type="checkbox" />
+                            </form>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <form>
+                                <input id="PreisBox" type="number">
+                            </form>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    </div>
+
+    <footer id="footer">Copyright (C) MAMPF 2019</footer>
     </div>
 </body>
 

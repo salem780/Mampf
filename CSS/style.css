@@ -1,46 +1,41 @@
-
-
-
-body
-{
-    background-color:  rgb(247, 247, 247);
+body {
+    background-color: rgb(247, 247, 247);
     margin: 0%;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{ color: black}
-
-h2{
-
+h1 {
     color: black
 }
 
-h3{
+h2 {
+    color: black
+}
+
+h3 {
     color: black
 }
 
 p {
-    color: black; 
-    
+    color: black;
 }
 
-.grid-container{
+.grid-container {
     background-color: rgb (247, 247, 247);
     display: grid;
-grid-template-columns: auto;  /*wenn ich da angebe, dann erstelle ich spalten*/ 
-grid-template-rows: 20px, auto 20px;
-margin: 0%;
+    grid-template-columns: auto;
+    /*wenn ich da angebe, dann erstelle ich spalten*/
+    grid-template-rows: 20px, auto 20px;
+    margin: 0%;
 }
 
-ody{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin:0%;
-  background-color: rgb (247, 247, 247);
-
+ody {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    background-color: rgb (247, 247, 247);
 }
 
-#header{
+#header {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -51,265 +46,233 @@ ody{
     justify-content:space-around;
     flex-wrap: wrap;
     align-content: space-around;*/
-        
 }
 
-#nav-bild{
+#nav-bild {
     float: left;
     margin-left: 5%;
 }
 
-
-#nav-login{
+#nav-login {
     float: right;
-    display: inline; 
+    display: inline;
     margin-right: 5%;
     margin-top: 1.2%;
     font-weight: bold;
     border: 5px;
     border-color: white;
     text-align: center;
-    
-   
-   
-    border-radius: 8px;}
+    border-radius: 8px;
+}
 
-    a:link, a:visited {
-        background-color: none;
-        color: white;
-        border: 2px solid white;
-       padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        align-items: center;
-      }
-      
-      a:hover, a:active {
-        background-color: grey;
-        color: white;
-        align-items: center;
-      }
+a:link,
+a:visited {
+    background-color: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+}
 
+a:hover,
+a:active {
+    background-color: grey;
+    color: white;
+    align-items: center;
+}
 
-      #search{
-        grid-column-start: 1;
-         grid-column-end: 3;
-        /* display: flex;
+#search {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* display: flex;
          flex-wrap: wrap;
         */
-        display: flex;
-        justify-content:space-around;
-        flex-wrap: wrap;
-        align-content: space-around;
-     
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-image: url(wmrv1.png);
+    background-size: cover;
+    height: 550px;
+    color: white;
+    font-weight: bold;
+}
 
-        background-image: url(wmrv1.png);
-        background-size: cover;
-        height: 550px;
+#tableform {
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        color: white;
-        font-weight: bold;
-        
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-            
-        
-      }
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-      #tableform{
-        table-layout: auto;
-        margin-left: auto;
-        margin-right:auto;
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
 
-      
-        }
+[type="checkmark"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    background-color: #eee;
+}
 
-      
-      [type="date"] {
-        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-        border: none;
-        color: white;
-        padding: 7px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 8px;
-        color:black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      
-      }
-      
-      
-      [type="date"]::-webkit-inner-spin-button {
-        display: none;
-        border: none;
-          color: white;
-          padding: 7px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          border-radius: 8px;
-          color:black;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      [type="date"]::-webkit-calendar-picker-indicator {
-        opacity: 0;
-      }
+[type="number"] {
+    border: none;
+    color: white;
+    padding: 7px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-      [type="checkmark"]{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 50px;
-        width: 50px;
-        border-radius: 8px;
-        background-color: #eee;}
-
-      
-
-      [type="number"]{
-        border: none;
-          color: white;
-          padding: 7px 0px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          border-radius: 8px;
-          color:black;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      
-
-      .grid-container{
-        background-color: rgb (247, 247, 247);
-        display: grid;
-    grid-template-columns: auto;  /*wenn ich da angebe, dann erstelle ich spalten*/ 
+.grid-container {
+    background-color: rgb (247, 247, 247);
+    display: grid;
+    grid-template-columns: auto;
+    /*wenn ich da angebe, dann erstelle ich spalten*/
     grid-template-rows: 20px, auto 20px;
     margin: 0%;
     height: 600px;
-    }
-      .box {grid-column-start: 1;
-
-        grid-column-end: 3;
-            display: flex;
-            justify-content:space-around;
-            flex-wrap: wrap;
-            align-content: space-around;
-        
-        
-        }
-        .content1{
-            float: left;
-           
-            padding:20px;
-            width: 500px;
-           
-            height: 300px;
-            margin: 20px;
-            background-color:  white;
-        }
-        .content2{
-            float: left;
-           
-            /*border: 1px solid black;*/
-            padding:20px;
-            width: 500px;
-            height: 300px;
-            margin: 20px;
-            background-color: white;
-        }
-     
-    
-      
-
-      #buttonbrown{
-
-        background-color: rgb(179,120,87);
-        border: none;
-        color: white;
-        padding: 7px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 8px;}
-
-      #footer{
-       /* float: right;*/
-        background-color:  rgb(179,120,87);
-        color: white;
-       align-content: space-around;
-       width: 100%;
-       color: white;
-       position:absolute;
-       bottom: 0
-   
-      *display:center;
-       justify-content:right;
-       flex-wrap: wrap;
-        align-content: center;*/
-                width: 100%;
-        height: 50px;
-      }
-
-.menu{
-    grid-column-start: 1;
-    grid-column-end: 3; /* muss immer eins mehr sein */
 }
 
-
-
-
-.box {grid-column-start: 1;
-
-grid-column-end: 3;
+.box {
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
-
-
 }
-.content1{
+
+.content1 {
     float: left;
-   
-    padding:20px;
-    width: 500px;
-   
-    height: 300px;
-    margin: 20px;
-    background-color:  white;
-}
-.content2{
-    float: left;
-   
-    /*border: 1px solid black;*/
-    padding:20px;
+    padding: 20px;
     width: 500px;
     height: 300px;
     margin: 20px;
     background-color: white;
 }
 
-.footer{
+.content2 {
+    float: left;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+}
+
+#buttonbrown {
+    background-color: rgb(179, 120, 87);
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+#footer {
+    /* float: right;*/
+    background-color: rgb(179, 120, 87);
+    color: white;
+    align-content: space-around;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0 *display: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-content: center;
+    */ width: 100%;
+    height: 50px;
+}
+
+.menu {
     grid-column-start: 1;
-    grid-column-end: 3; 
+    grid-column-end: 3;
+    /* muss immer eins mehr sein */
+}
+
+.box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.content1 {
+    float: left;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+}
+
+.content2 {
+    float: left;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
     float: right;
-    height:5px;
-   
-   
-   
+    height: 5px;
     background: rgb(40, 48, 29);
 }
 
 @media screen and (max-width:700px) {
-
-    .box{
-
+    .box {
         display: flexbox
     }
 }
-#buttongrey{
 
+#buttongrey {
     background-color: grey;
     border: none;
     color: white;
@@ -318,17 +281,91 @@ grid-column-end: 3;
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    
-
 }
 
-#buttonbrown{
-
-    background-color: rgb(179,120,87);
+#buttonbrown {
+    background-color: rgb(179, 120, 87);
     border: none;
     color: white;
     padding: 7px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 8px;}
+    border-radius: 8px;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    background-color: white;
+    border: solid 1px rgb(179, 120, 87);
+    color: black;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boxPartner {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-flow: column;
+}
+
+.Mittagstischanlegen {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.menue {
+    height: 150px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#buttonMenüAnlegen {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+#Week {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+#DatumWeek {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
