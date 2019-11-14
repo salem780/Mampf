@@ -175,6 +175,14 @@ a:active {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#PreisBox {
+    border: 1px solid gray;
+}
+
+#GerichtNameBox {
+    border: 1px solid gray;
+}
+
 [type="text"] {
     border: none;
     color: white;
@@ -355,6 +363,15 @@ table {
     align-content: space-around;
 }
 
+.Begrüßung {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 .menue {
     height: 150px;
     grid-column-start: 1;
@@ -374,6 +391,7 @@ table {
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
+    height: 47px;
 }
 
 #Week {
@@ -385,6 +403,7 @@ table {
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
+    height: 47px;
 }
 
 #DatumWeek {
